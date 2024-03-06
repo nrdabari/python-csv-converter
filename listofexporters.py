@@ -3,7 +3,7 @@ import tabula
 import pandas as pd
 
 # Path to the PDF file
-pdf_path = "Top_100_Exporters_2022_23_pdf1257.pdf"
+pdf_path = "tea.pdf"
 
 # Read the PDF into a list of DataFrames, specify pages='all' to read all pages
 # You might need to set the lattice=True or stream=True based on the PDF's structure
@@ -20,7 +20,7 @@ else:
 # Only proceed if df is created successfully
 if 'df' in locals():
     # Write DataFrame to a CSV file
-    csv_file_path = "Top_100_Exporters_2022_23_pdf1257.csv"
+    csv_file_path = "tea.csv"
     df.to_csv(csv_file_path, index=False)
 
     print("Data has been written to:", csv_file_path)
