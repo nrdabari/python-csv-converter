@@ -14,9 +14,9 @@ def extract_tables_from_pdf(pdf_path, csv_path):
                         writer.writerow(row)
 
 # Path to the PDF file
-pdf_path = "exporter_contact_details_2012.pdf"
+pdf_path = "List_of_Major_Software_Companies_in_India.pdf"
 # Path to the output CSV file
-csv_path = "exporter_contact_details_2012.csv"
+csv_path = "List_of_Major_Software_Companies_in_India.csv"
 
 # Extract tables from PDF and write to CSV
 extract_tables_from_pdf(pdf_path, csv_path)
